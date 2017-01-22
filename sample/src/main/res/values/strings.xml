@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RtlMaterialSpinner</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="show_hide_error">Show/hide error</string>
+</resources>
