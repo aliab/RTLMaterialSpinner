@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, ITEMS);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource(fr.hamsaa.materialspinner.R.layout.item);
 
         initSpinnerHintAndFloatingLabel();
         initSpinnerNoHintNoFloatingLabel();

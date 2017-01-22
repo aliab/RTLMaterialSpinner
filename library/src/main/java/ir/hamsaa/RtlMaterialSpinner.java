@@ -795,7 +795,7 @@ public class RtlMaterialSpinner extends AppCompatSpinner implements ValueAnimato
         private View getHintView(final View convertView, final ViewGroup parent, final boolean isDropDownView) {
 
             final LayoutInflater inflater = LayoutInflater.from(mContext);
-            final int resid = isDropDownView ? android.R.layout.simple_spinner_dropdown_item : android.R.layout.simple_spinner_item;
+            final int resid = R.layout.item;
             final TextView textView = (TextView) inflater.inflate(resid, parent, false);
             textView.setText(hint);
             textView.setTextColor(RtlMaterialSpinner.this.isEnabled() ? hintColor : disabledColor);
