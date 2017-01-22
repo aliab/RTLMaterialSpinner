@@ -1,4 +1,5 @@
-# MaterialSpinner
+# RTL Material Spinner
+[![](https://jitpack.io/v/hamsaadev/RTLMaterialSpinner.svg)](https://jitpack.io/#hamsaadev/RTLMaterialSpinner)
 
 ![Hero Image](https://raw.githubusercontent.com/hamsaadev/RTLMaterialSpinner/master/screenshots/splash.jpg)
 
@@ -9,9 +10,7 @@ This library provides you an RTL Spinner with the Material style. You can use it
 Add floating label text, hint and error messages.
 
 ## برای دوستان فارسی زبان
-
-ما در همسا همیشه سعی میکنم که حداقل سهم کوچکی در توسعه نرم افزار های فارسی داشته باشیم. به همین دلیل خوشحال میشویم که هر آنچه که ساخته ایم را با دیگران به اشتراک بگذاریم تا بتوانیم آینده ای بهتر را همه در کنار هم بسازیم. اگر ایده ای دارید یا این کد ها را بهبود داده اید٬ بسیار خوشحال میشویم که درخواست pr شما را بپذیریم.
-
+ما در همسا همیشه سعی میکنیم که حداقل سهم کوچکی در توسعه نرم افزار های فارسی داشته باشیم. به همین دلیل خوشحال میشویم که هر آنچه که ساخته ایم را با دیگران به اشتراک بگذاریم تا بتوانیم آینده ای بهتر را همه در کنار هم بسازیم. اگر ایده ای دارید یا این کد ها را بهبود داده اید٬ بسیار خوشحال میشویم که درخواست بهبود کد ها از شما را بپذیریم.
 
 ## Usages
 
@@ -31,13 +30,13 @@ allprojects {
 Step 2. Add the dependency
 ```groovy
 dependencies {
-    compile ''
+    compile 'com.github.hamsaadev:RTLMaterialSpinner:V1.0'
 }
-
+```
 
 If you use other libraries requiring nineoldandroids and appcompat-v7 like [MaterialEditText](https://github.com/rengwuxian/MaterialEditText/) make sure to exclude them :
 ```groovy
-compile (''){
+compile ('com.github.hamsaadev:RTLMaterialSpinner:V1.0'){
         exclude group: 'com.nineoldandroids', module: 'library'
         exclude group: 'com.android.support', module: 'appcompat-v7'
 }
@@ -84,6 +83,10 @@ If you need to set an error message, you can do it the same way than with an Edi
  //Desactivate
  spinner.setError(null);
 ```
+
+## CREDITS
+* Special Thanks to [MaterialSpinner](https://github.com/ganfra/MaterialSpinner).
+
 
 ## License
 ```
