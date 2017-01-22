@@ -1,6 +1,6 @@
 # MaterialSpinner
 
-![Hero Image](https://raw.githubusercontent.com/aliab/circular-music-progressbar/master/art/splash.jpg)
+![Hero Image](https://raw.githubusercontent.com/hamsaadev/RTLMaterialSpinner/master/screenshots/splash.jpg)
 
 
 RTl Material Spinner
