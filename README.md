@@ -83,6 +83,10 @@ If you need to set an error message, you can do it the same way than with an Edi
  spinner.setError(null);
 ```
 
+## CREDITS
+* Special Thanks to [MaterialSpinner](https://github.com/ganfra/MaterialSpinner).
+
+
 ## License
 ```
    
