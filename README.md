@@ -1,4 +1,5 @@
 # MaterialSpinner
+[![](https://jitpack.io/v/hamsaadev/RTLMaterialSpinner.svg)](https://jitpack.io/#hamsaadev/RTLMaterialSpinner)
 
 ![Hero Image](https://raw.githubusercontent.com/hamsaadev/RTLMaterialSpinner/master/screenshots/splash.jpg)
 
