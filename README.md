@@ -1,16 +1,13 @@
 # RTL Material Spinner
-[![](https://jitpack.io/v/hamsaadev/RTLMaterialSpinner.svg)](https://jitpack.io/#hamsaadev/RTLMaterialSpinner)
+[![](https://jitpack.io/v/aliab/RTLMaterialSpinner.svg)](https://jitpack.io/#aliab/RTLMaterialSpinner)
 
-![Hero Image](https://raw.githubusercontent.com/hamsaadev/RTLMaterialSpinner/master/screenshots/splash.jpg)
+![Hero Image](https://raw.githubusercontent.com/aliab/RTLMaterialSpinner/master/screenshots/splash.jpg)
 
 
 RTl Material Spinner
 
 This library provides you an RTL Spinner with the Material style. You can use it like any regular Spinner.
 Add floating label text, hint and error messages.
-
-## برای دوستان فارسی زبان
-ما در همسا همیشه سعی میکنیم که حداقل سهم کوچکی در توسعه نرم افزار های فارسی داشته باشیم. به همین دلیل خوشحال میشویم که هر آنچه که ساخته ایم را با دیگران به اشتراک بگذاریم تا بتوانیم آینده ای بهتر را همه در کنار هم بسازیم. اگر ایده ای دارید یا این کد ها را بهبود داده اید٬ بسیار خوشحال میشویم که درخواست بهبود کد ها از شما را بپذیریم.
 
 ## Usages
 
@@ -30,7 +27,7 @@ allprojects {
 Step 2. Add the dependency
 ```groovy
 dependencies {
-    compile 'com.github.hamsaadev:RTLMaterialSpinner:V1.0.1'
+    implementation 'com.github.aliab:RTLMaterialSpinner:V1.0.1'
 }
 ```
 
@@ -93,7 +90,7 @@ If you need to set an error message, you can do it the same way than with an Edi
    
 The MIT License (MIT)
 
-Copyright (c) 2017 Hamsaa.ir
+Copyright (c) 2018 Ali Abdolahi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
