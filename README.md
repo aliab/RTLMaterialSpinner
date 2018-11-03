@@ -27,13 +27,13 @@ allprojects {
 Step 2. Add the dependency
 ```groovy
 dependencies {
-    implementation 'com.github.aliab:RTLMaterialSpinner:1.2.0'
+    implementation 'com.github.aliab:RTLMaterialSpinner:1.2.1'
 }
 ```
 
 If you use other libraries requiring nineoldandroids and appcompat-v7 like [MaterialEditText](https://github.com/rengwuxian/MaterialEditText/) make sure to exclude them :
 ```groovy
-implementation ('com.github.hamsaadev:RTLMaterialSpinner:1.2.0'){
+implementation ('com.github.hamsaadev:RTLMaterialSpinner:1.2.1'){
         exclude group: 'com.android.support', module: 'appcompat-v7'
 }
 ```
