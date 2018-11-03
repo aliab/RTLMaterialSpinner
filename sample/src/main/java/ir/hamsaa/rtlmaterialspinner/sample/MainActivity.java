@@ -25,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -38,35 +39,43 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void initSpinnerHintAndFloatingLabel() {
-        spinner1 = (RtlMaterialSpinner) findViewById(R.id.spinner1);
+    private void initSpinnerHintAndFloatingLabel()
+    {
+        spinner1 = findViewById(R.id.spinner1);
         spinner1.setAdapter(adapter);
         spinner1.setPaddingSafe(0, 0, 0, 0);
     }
 
-    private void initSpinnerNoHintNoFloatingLabel() {
-        spinner3 = (RtlMaterialSpinner) findViewById(R.id.spinner3);
+    private void initSpinnerNoHintNoFloatingLabel()
+    {
+        spinner3 = findViewById(R.id.spinner3);
         spinner3.setAdapter(adapter);
     }
 
-    private void initSpinnerMultiline() {
-        spinner4 = (RtlMaterialSpinner) findViewById(R.id.spinner4);
+    private void initSpinnerMultiline()
+    {
+        spinner4 = findViewById(R.id.spinner4);
         spinner4.setAdapter(adapter);
         spinner4.setHint("یک ایتم را انتخاب کنید");
     }
 
-    private void initSpinnerScrolling() {
-        spinner5 = (RtlMaterialSpinner) findViewById(R.id.spinner5);
+    private void initSpinnerScrolling()
+    {
+        spinner5 = findViewById(R.id.spinner5);
         spinner5.setAdapter(adapter);
         spinner5.setHint("یک ایتم را انتخاب کنید");
     }
 
 
-    public void activateError(View view) {
-        if (!shown) {
+    public void activateError(View view)
+    {
+        if (!shown)
+        {
             spinner4.setError(ERROR_MSG);
             spinner5.setError(ERROR_MSG);
-        } else {
+        }
+        else
+        {
             spinner4.setError(null);
             spinner5.setError(null);
         }
