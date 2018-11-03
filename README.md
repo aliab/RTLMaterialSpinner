@@ -58,6 +58,7 @@ In the xml :
         app:ms_arrowColor="@color/arrow"
         app:ms_arrowSize="16dp"
         app:ms_alignLabels="false"
+        app:ms_hintTextSize="25"
         app:ms_floatingLabelColor="@color/floating_label"/>
 ```
 You can set a hint and a floating label text. If no floating label text is provided, the hint will be set instead.
