@@ -97,6 +97,7 @@ public class RtlMaterialSpinner extends AppCompatSpinner implements ValueAnimato
     private float arrowSize;
     private boolean enableErrorLabel;
     private boolean enableFloatingLabel;
+    private float hintTextSize;
     private boolean isRtl;
 
     private HintAdapter hintAdapter;
@@ -175,7 +176,9 @@ public class RtlMaterialSpinner extends AppCompatSpinner implements ValueAnimato
         arrowSize = array.getDimension(R.styleable.RtlMaterialSpinner_ms_arrowSize, dpToPx(DEFAULT_ARROW_WIDTH_DP));
         enableErrorLabel = array.getBoolean(R.styleable.RtlMaterialSpinner_ms_enableErrorLabel, true);
         enableFloatingLabel = array.getBoolean(R.styleable.RtlMaterialSpinner_ms_enableFloatingLabel, true);
+        hintTextSize = array.getFloat(R.styleable.RtlMaterialSpinner_ms_hintTextSize, getResources().getDimensionPixelSize(R.dimen.label_text_size));
         isRtl = array.getBoolean(R.styleable.RtlMaterialSpinner_ms_isRtl, false);
+
 
         String typefacePath = array.getString(R.styleable.RtlMaterialSpinner_ms_typeface);
         if (typefacePath != null)
@@ -210,12 +213,10 @@ public class RtlMaterialSpinner extends AppCompatSpinner implements ValueAnimato
     private void initPaintObjects()
     {
 
-        int labelTextSize = getResources().getDimensionPixelSize(R.dimen.label_text_size);
-
         paint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
         textPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
-        textPaint.setTextSize(labelTextSize);
+        textPaint.setTextSize(hintTextSize);
         if (typeface != null)
         {
             textPaint.setTypeface(typeface);
@@ -479,6 +480,9 @@ public class RtlMaterialSpinner extends AppCompatSpinner implements ValueAnimato
             {
                 textPaint.setAlpha((int) ((0.8 * floatingLabelPercent + 0.2) * baseAlpha * floatingLabelPercent));
             }
+
+            textPaint.setTextSize(dpToPx(hintTextSize));
+
             String textToDraw = floatingLabelText != null ? floatingLabelText.toString() : hint.toString();
             if (isRtl)
             {
@@ -647,6 +651,17 @@ public class RtlMaterialSpinner extends AppCompatSpinner implements ValueAnimato
     public void setHintColor(int hintColor)
     {
         this.hintColor = hintColor;
+        invalidate();
+    }
+
+    /**
+     * Set hintTextSize in px
+     *
+     * @param hintTextSize hint text size in px
+     */
+    public void setHintTextSizeInPixel(float hintTextSize)
+    {
+        textPaint.setTextSize(hintTextSize);
         invalidate();
     }
 

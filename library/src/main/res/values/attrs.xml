@@ -19,6 +19,7 @@
         <attr name="ms_enableFloatingLabel" format="boolean"/>
         <attr name="ms_enableErrorLabel" format="boolean"/>
         <attr name="ms_isRtl" format="boolean"/>
+        <attr name="ms_hintTextSize" format="float"/>
 
     </declare-styleable>
 </resources>
